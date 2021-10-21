@@ -60,7 +60,7 @@
                     let vm = this;
                     this.getMessages();
                     window.Echo.private("chat." + this.currentRoom.id )
-                    .listen('.message.new', e => {
+                    .listen('.message.new', e => { 
                         vm.getMessages();
                     })
                 }
